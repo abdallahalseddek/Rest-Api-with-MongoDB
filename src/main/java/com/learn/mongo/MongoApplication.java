@@ -1,5 +1,9 @@
 package com.learn.mongo;
 
+import com.learn.mongo.api.entity.Address;
+import com.learn.mongo.api.entity.Gender;
+import com.learn.mongo.api.entity.Student;
+import com.learn.mongo.api.StudentRepo;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,7 +19,7 @@ public class MongoApplication {
     public static void main(String[] args) {
         SpringApplication.run(MongoApplication.class, args);
     }
-    @Bean
+   /* @Bean
     CommandLineRunner runner(StudentRepo repo){
         return args -> {
             Address address = new Address(
@@ -44,6 +48,6 @@ public class MongoApplication {
 
 
         };
-    }
+    }*/
 
 }

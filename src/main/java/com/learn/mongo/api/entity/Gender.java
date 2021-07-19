@@ -1,4 +1,4 @@
-package com.learn.mongo;
+package com.learn.mongo.api.entity;
 
 public enum Gender {
     MALE,
