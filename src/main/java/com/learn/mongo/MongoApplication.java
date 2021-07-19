@@ -34,7 +34,15 @@ public class MongoApplication {
                   LocalDateTime.now()
 
           );
-          repo.insert(student);
+            repo.findByEmail(student.getEmail()).ifPresentOrElse(s-> {
+                System.out.println("already exists!");
+            }, ()->{
+                System.out.println("Inserting student");
+                repo.insert(student);
+            });
+
+
+
         };
     }
 
